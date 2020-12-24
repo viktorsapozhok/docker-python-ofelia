@@ -3,8 +3,6 @@ FROM python:3.8-slim
 RUN groupadd --gid 1000 user && \
     useradd --uid 1000 --gid 1000 --create-home --shell /bin/bash user
 
-ENV PATH="/home/user/.local/bin:${PATH}"
-
 RUN mkdir /home/user/mypackage
 ADD setup.py /home/user/mypackage
 ADD mypackage /home/user/mypackage/mypackage

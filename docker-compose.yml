@@ -13,7 +13,7 @@ services:
       ofelia.enabled: "true"
       ofelia.job-exec.mypackage.schedule: "@every 1m"
       ofelia.job-exec.mypackage.command: "mytask"
-      ofelia.job-exec.mypackage.slack-webhook: "slack-webhook-url"
+#      ofelia.job-exec.mypackage.slack-webhook: "slack-webhook-url"
 
   ofelia:
     image: mcuadros/ofelia:latest
