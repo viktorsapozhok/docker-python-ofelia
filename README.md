@@ -1,2 +1,8 @@
 # docker-python-ofelia
-An example of running python script as a cron job in a docker container
+
+This tutorial provides a quick guide of how to set up a cron job running a Python application
+within docker container using Ofelia scheduler.
+
+## License
+
+MIT License (see [LICENSE](LICENSE)).
