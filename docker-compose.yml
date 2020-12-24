@@ -1,0 +1,23 @@
+version: '3.7'
+
+services:
+  mypackage:
+    container_name: mypackage
+    restart: always
+    build:
+      context: .
+      dockerfile: Dockerfile
+    labels:
+      ofelia.enabled: "true"
+      ofelia.job-exec.mypackage.schedule: "@every 10s"
+      ofelia.job-exec.mypackage.command: "mytask"
+      ofelia.job-exec.mypackage.slack-webhook: "slack_webhook_url"
+
+  ofelia:
+    image: mcuadros/ofelia:latest
+    restart: always
+    depends_on:
+      - mypackage
+    command: daemon --docker
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock:ro
