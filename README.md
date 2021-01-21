@@ -137,3 +137,4 @@ MIT License (see [LICENSE](LICENSE)).
 
 * [Ofelia - a docker job scheduler](https://github.com/mcuadros/ofelia)
 * [Sending messages using Incoming Webhooks](https://api.slack.com/messaging/webhooks)
+* [Running Python script in docker container by cron as a non-root user](https://viktorsapozhok.github.io/docker-python-ofelia/)
