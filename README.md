@@ -133,8 +133,6 @@ As a result, we have a job running by schedule inside the container with the exe
 
 MIT License (see [LICENSE](LICENSE)).
 
-## Reference
-
 [1]: https://github.com/mcuadros/ofelia "Ofelia - a docker job scheduler"
 [2]: https://api.slack.com/messaging/webhooks "Sending messages using Incoming Webhooks"
 [3]: https://viktorsapozhok.github.io/docker-python-ofelia/ "Running Python script in docker container by cron as a non-root user]"
